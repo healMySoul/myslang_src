@@ -1,0 +1,1 @@
+<?= $this->render('word', ['word' => $word, 'asideList' => $asideList]) ?>

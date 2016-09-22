@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+$xsScreen: 321px;
+$smScreen: 768px;
+$mdScreen: 992px;
+$lgScreen: 1200px;
+
+@mixin respond-to-screen($media) {
+	@if $media == xs {
+		@media only screen and (min-width: $xsScreen) { @content; }
+	}
+	@else if $media == sm {
+		@media only screen and (min-width: $smScreen) { @content; }
+	}
+	@else if $media == md {
+		@media only screen and (min-width: $mdScreen) { @content; }
+	}
+	@else if $media == lg {
+		@media only screen and (min-width: $lgScreen) { @content; }
+	}
+}
+
+#main-header {
+	.desktop-wrap {
+		@include respond-to-screen('md') {
+			display: inline-block;
+		}
+	}
+
+	#desktop-menu {
+		display: inline-block;
+		vertical-align: top;
+
+		ul {
+			padding-top: 20px;
+
+			li {
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.word {
+	.definition {
+		position: relative;
+		padding-left: 30px;
+
+		.rating {
+			left: 0;
+			position: absolute;
+		}
+
+		.wrap {
+			
+		}
+	}
+}
+
+.tag-list {
+	li {
+		position: relative;
+
+		span {
+			position: absolute;
+
+			&.wordCount {
+				right: 70px;
+			}
+
+			&.newWordCount {
+				right: 0;
+			}
+		}
+	}
+}
+
+

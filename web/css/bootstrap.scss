@@ -1,0 +1,29 @@
+/* reDefining Bootstrap variables  */
+$grid-gutter-width: 30px;
+$container-large-desktop: 1000px;
+
+@import "../../vendor/twbs/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@media (min-width: $screen-xs-min) {
+	.pull-right-xs {
+		float: right;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.pull-right-sm {
+		float: right;
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.pull-right-md {
+		float: right;
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.pull-right-lg {
+		float: right;
+	}
+}

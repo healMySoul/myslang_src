@@ -1,0 +1,7 @@
+User-agent: Yandex
+Allow: /
+Sitemap: http://myslang.ru/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Sitemap: http://myslang.ru/sitemap.xml
